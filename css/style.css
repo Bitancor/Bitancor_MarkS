@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: #004a6d;
+
+}
+
+.nav_bar{
+    position: -webkit-sticky;
+    position: sticky;
+    display:grid;
+    top: 0;
+    align-items: center;
+    background: linear-gradient(180deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
+    height: 100px;
+    width: 100vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav_selection{
+    display: flex;
+    align-items: center;
+}
+
+.nav_icon{
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav_icon:hover{
+    color: #0291d3;
+    transition: 0.3s;
+}
+
+nav ul{
+    color: white;
+    list-style-type: none;
+    padding: 15px;
+    overflow: hidden;
+}
+  
+nav li{
+    float: left;
+}
+  
+nav li a{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    padding-right: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+  
+nav li a:hover{
+    color: #0291d3;
+}
+
+.sign_up{
+    margin-right: 40px;
+    transition: all 0.5s ease;
+}
+
+.sign_up a{
+    color: #0291d3;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0291d3;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sign_up a:hover{
+    color: black;
+    background-color: #0291d3;
+}
+
+.menu{
+    font-size: 25px;
+    display: none;
+    color: white;
+    padding: 20px;
+    transition: 0.3s;
+    transition: all 0.5s ease;
+}
+
+.menu:hover{
+    color: #0291d3;
+}
+
+@media screen and (max-width: 768px) {
+    .sign_up{
+        margin: 0;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .nav_selection{
+        position: absolute;
+        display: block;
+        top: 100%;
+        right: 1%;
+        width: 0;
+        height: 0;
+        background: none;
+        border-radius: 10px;
+        text-align: center;
+        transition: all .5s ease;
+
+    }
+
+    .nav_selection a{
+        display: block;
+        margin: 7px 0;
+        padding: 0px 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .nav_selection ul{
+        width: 100%;
+    }
+
+    .nav_selection li{
+        width: 100%;
+    }
+
+    .nav_selection li a:hover{
+        background: white;
+        border-radius: 10px;
+        color: #202020;
+        font-weight: bold;
+    }
+
+    .nav_selection li a:hover{
+        transition: 0.5s;
+    }
+
+    .nav_selection.open{
+        background: #202020;
+        width: 50%;
+        height: 21vh;
+        box-shadow: 1px 1px 8px #111111;
+    }
+}
