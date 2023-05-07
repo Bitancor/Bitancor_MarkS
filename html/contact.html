@@ -20,7 +20,7 @@
 
             <ul class="nav_selection">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="profile.html">Profile</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Portfolio</a></li>
             </ul>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="contact_socials">
                     <div class="contact_details_title">Socials</div>
-                    <div class="contact_icons">
+                    <div class="social_icons">
                         <div class="icons"><i class="fa-brands fa-square-facebook"><a href="#"></a></i></div>
                         <div class="icons"><i class="fa-brands fa-twitter"><a href="#"></a></i></div>
                     </div>
@@ -54,19 +54,16 @@
             <div class="card_form">
                 <div class="contact_form">
                     <div class="contact_details_title">Enter Your Details</div>
-                    <form class="contact" action="" method="post">
-                        <input type="text" name="name" class="text-box" placeholder="Your Name">
-                        <input type="email" name="email" class="text-box" placeholder="Your Email">
-                        <input type="text" name="subject" class="text-box" placeholder="Subject">
-                        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-                        <input type="submit" name="submit" class="send-btn" value="Send Email">
+                    <form class="contact" action="https://formspree.io/f/mwkjyydo" method="POST">
+                        <input type="text" name="name" class="text-box" placeholder="Your Name" autocomplete="off" required>
+                        <input type="email" name="email" class="text-box" placeholder="Your Email" autocomplete="off" required>
+                        <input type="text" name="subject" class="text-box" placeholder="Subject" autocomplete="off" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" autocomplete="off" required></textarea>
+                        <button type="submit" class="send-btn">Send Email</button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="sections">
-
     </section>
 
     <script src="../js/script.js"></script>
