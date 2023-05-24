@@ -33,6 +33,4 @@
             alert("Password Not Matched!")
         </script>';
     }
-
-
 ?>

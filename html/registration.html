@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello! Welcome to my Website</title>
+    <title>Register Now!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -12,17 +12,20 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="reg_container">
-        <div class="reg_card">
-            <div class="reg_form">
-                <div class="reg_title">Register</div>
-                <form class="reg" action="reg.php" method="GET">
-                    <input type="text" name="rname" class="text-box" placeholder="Enter Username">
-                    <input type="email" name="remail" class="text-box" placeholder="Enter Email" >
-                    <input type="password" name="renterPass" class="text-box" placeholder="Enter Password">
-                    <input type="password" name="rconfirmPass" class="text-box" placeholder="Confirm Password">
+    <div class="reglog_container">
+        <div class="reglog_card">
+            <div class="reglog_form">
+                <div class="reglog_title">Register</div>
+                <form class="reglog" action="reg.php" method="GET">
+                    <input type="text" name="rname" class="text-box" placeholder="Enter Username" required>
+                    <input type="email" name="remail" class="text-box" placeholder="Enter Email" required>
+                    <input type="password" name="renterPass" class="text-box" placeholder="Enter Password" required>
+                    <input type="password" name="rconfirmPass" class="text-box" placeholder="Confirm Password" required>
                     <button type="submit" class="send-btn">Sign Up</button>
                 </form>
+            </div>
+            <div class="acct_create">
+                Already have an account? <a href="login.html">Login Now</a>.
             </div>
         </div>
     </div>
