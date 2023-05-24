@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to see my Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="reglog_container">
+        <div class="reglog_card">
+            <div class="reglog_form">
+                <div class="reglog_title">Login</div>
+                <form class="reglog" action="login.php" method="POST">
+                    <input type="text" name="getusername" class="text-box" placeholder="Enter Username" required>
+                    <input type="password" name="getpass" class="text-box" placeholder="Enter Password" required>
+                    <button type="submit" class="send-btn" name="sub">Login</button>
+                </form>
+            </div>
+            <div class="acct_create">
+                Don't have an account? <a href="registration.html">Please Sign In</a>.
+            </div>
+        </div>
+    </div>
+</body>
