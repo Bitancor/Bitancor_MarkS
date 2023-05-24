@@ -40,12 +40,11 @@ nav{
 
 .nav_icon{
     font-size: 30px;
-    margin-left: 3%;
+    margin-left: 50px;
     font-weight: bold;
-    color: white;
 }
 
-.nav_icon:hover{
+.nav_icon a:hover{
     color: #0291d3;
     transition: 0.3s;
 }
@@ -74,29 +73,28 @@ nav li a:hover{
     color: #0291d3;
 }
 
-.sign_up{
-    margin-right: 3%;
+.log_out{
+    margin-right: 50px;
     transition: all 0.5s ease;
 }
 
-.sign_up a{
-    color: #0291d3;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #0291d3;
-    border-radius: 50px;
-    text-align: center;
-    font-weight: bold;
-    transition: 0.3s;
-    text-decoration: none;
+.logout_btn{
+    background: #0291d3;
+    color: #FFFFFF;
+    border: none;
+    width: 110px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.sign_up a:hover{
-    color: black;
-    background-color: #0291d3;
+.logout_btn:hover{
+    background: white;
+    color: #0291d3;
 }
 
 .menu{
@@ -141,6 +139,15 @@ nav li a:hover{
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+#home_h1{
+    font-size: 50px;
+}
+
+#home_p{
+    font-size: 20px;
+}
+
 .prof_button{
     margin-top: 20px;
 }
@@ -191,8 +198,8 @@ nav li a:hover{
     background: linear-gradient(90deg, rgb(4, 174, 253), rgb(3, 109, 158));
 }
 
-/*Registration Styles*/
-.reg_container{
+/*Registration and Login Styles*/
+.reglog_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,7 +207,7 @@ nav li a:hover{
     gap: 1rem;
 }
 
-.reg_card{
+.reglog_card{
     background: #202020;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -210,19 +217,32 @@ nav li a:hover{
     max-width: 550px;
 }
 
-.reg_title{
+.reglog_title{
     font-size: 30px;
     font-weight: bolder;
     color: #0291d3;
 }
 
-.reg{
+.reglog{
     margin-top: 15px;
 }
 
-.reg_form .text-box:focus{
+.reglog_form .text-box:focus{
     outline: none;
     border-color: #0291d3;
+}
+
+.acct_create{
+    margin-top: 11px;
+}
+
+.acct_create a{
+    color:#0291d3;
+    transition: 0.3s ease-in-out
+}
+
+.acct_create a:hover{
+    color: white;
 }
 
 /*Profile Styles*/
@@ -259,6 +279,10 @@ nav li a:hover{
     grid-template-areas: 
         'side main'
         'down down';
+}
+
+#prof_h1{
+    font-size: 50px;
 }
 
 .side_profile_container{
@@ -340,6 +364,63 @@ nav li a:hover{
     margin-bottom: 30px;
 }
 
+.container {
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+  
+.skills {
+    text-align: right;
+    padding: 10px 10px 10px;
+    color: white;
+    border-radius: 50px;
+}
+  
+.html{
+    width: 90%; 
+    background-color: #0291d3;
+}
+
+.css {
+    width: 80%; 
+    background-color: #0291d3;
+}
+
+.js {
+    width: 20%; 
+    background-color: #0291d3;
+}
+
+.php {
+    width: 20%; 
+    background-color: #0291d3;
+}
+
+.cprog {
+    width: 50%; 
+    background-color: #0291d3;
+}
+
+.java{
+    width: 45%; 
+    background-color: #0291d3;
+}
+
+.img_container{
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px #111111;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#proj_img{
+    border-radius: 15px;
+}
+
 /*Contact Styles*/
 input, textarea{
     color: white;
@@ -400,11 +481,11 @@ input, textarea{
     gap: 1rem;
 }
 
-.icons{
+.icons a{
     transition: 0.3s ease-in-out;
 }
 
-.icons:hover{
+.icons a:hover{
     color: #0291d3;
 }
 
@@ -524,7 +605,7 @@ textarea{
     .nav_selection.open{
         background: #202020;
         width: 290px;
-        height: 205px;
+        height: 165px;
         box-shadow: 1px 1px 8px #111111;
     }
 }
@@ -555,5 +636,65 @@ textarea{
 @media screen and (max-width: 1102px) {
     .card_details{
         width: 550px;
+    }
+}
+
+/*For Smaller Screens*/
+@media screen and (max-width: 450px) {
+    /*Home*/
+    .sections{
+        margin-top: 40px;
+    }
+
+    .nav_icon{
+        margin-left: 20px;
+    }
+
+    .log_out{
+        margin: 0;
+    }
+
+    .pic{
+        width: 250px;
+        border: 8px solid #0a7db3;;
+    }
+
+    .introduction{
+        margin: 40px 10px 10px 10px;
+        gap: 30px;
+    }
+
+    .intro_text{
+        margin: 0;
+    }
+
+    #home_h1{
+        font-size: 30px;
+    }
+
+    #home_p{
+        font-size: 15px;
+    }
+
+    /*Profile*/
+    .top_container{
+        margin: 0px 10px 10px 10px;
+    }
+
+    .profile_container{
+        margin: 30px 10px 10px 10px;
+    }
+
+    #prof_h1{
+        font-size: 40px;
+    }
+
+    .img_container{
+        padding: 10px;
+    }
+
+    /*Contact*/
+    .contact_container{
+        margin: 40px 10px 10px 10px;
     }
 }
