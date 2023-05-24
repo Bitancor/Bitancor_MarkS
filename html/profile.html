@@ -11,22 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <div class="nav_bar">
         <nav>
-            <div class="nav_icon">
-                <p>Mark</p>
-            </div>
-
+            <div class="nav_icon"><a href="home.html">Mark</a></div>
             <ul class="nav_selection">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Portfolio</a></li>
             </ul>
-
-            <div class="sign_up">
-                <a href="#">Sign Up</a>
+            <div class="log_out">
+                <form action="logout.php" method="POST">
+                    <button type="submit" class="logout_btn" name="logoutsub">Logout</button>
+                </form>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-bars"></i>
@@ -37,7 +35,7 @@
     <section class="sections">
         <div class="top_container">
             <img class="profile_pic" src="../img/profilepic.jpg">
-            <h1 style="font-size: 50px;">Mark S. Bitancor</h1>
+            <h1 id="prof_h1">Mark S. Bitancor</h1>
         </div>
         <div class="profile_container">
             <div class="side_profile_container">
@@ -53,8 +51,8 @@
                     <div class="side_details_grid">
                         <div class="side_details_title">Socials</div>
                         <div class="social_icons">
-                            <div class="icons"><i class="fa-brands fa-square-facebook"><a href="#"></a></i></div>
-                            <div class="icons"><i class="fa-brands fa-twitter"><a href="#"></a></i></div>
+                            <div class="icons"><a href="https://www.facebook.com/mark.bitancor.5/"><i class="fa-brands fa-square-facebook"></i></a></div>
+                            <div class="icons"><a href="https://twitter.com/MarkBitanc32074"><i class="fa-brands fa-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -77,12 +75,55 @@
                 </div>
             </div>
             <div class="bottom_profile_container">
-                <div class="bottom_details_title">Skills</div>
+                <div class="bottom_details_title">Programming Skills</div>
                 <div class="bottom_details">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus tortor vel velit ullamcorper, at rhoncus leo feugiat. 
-                    Vivamus efficitur, sapien eget tempus mollis, purus urna interdum mauris, nec elementum sapien libero a enim. Aenean pulvinar 
-                    tortor sed turpis bibendum convallis. Aliquam sit amet dolor ac mauris lacinia tempor vel eu erat. Donec ultrices auctor orci non 
-                    cursus. Sed sed lorem lectus. 
+                    <p>HTML</p>
+                    <div class="container">
+                        <div class="skills html">90%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="container">
+                        <div class="skills css">80%</div>
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="container">
+                        <div class="skills js">20%</div>
+                    </div>
+                    <p>PHP</p>
+                    <div class="container">
+                        <div class="skills php">20%</div>
+                    </div>
+                    <p>C</p>
+                    <div class="container">
+                        <div class="skills cprog">50%</div>
+                    </div>
+                    <p>Java</p>
+                    <div class="container">
+                        <div class="skills java">45%</div>
+                    </div>
+                </div>
+                <div class="bottom_details_title">Projects</div>
+                <div class="bottom_details">
+                    <div class="img_container">
+                        <img src="../img/interface.png" width="100%" id="proj_img">
+                    </div>
+                    <h2>C Interface (Computer Programming)</h2>
+                    <p>Created an Interface by applying all we learned in Computer Progmming using C language for our Final Requirement in Computer Programming.</p>
+                    <div class="img_container">
+                        <img src="../img/hifi.png" width="100%" id="proj_img">
+                    </div>
+                    <h2>HiFi Prototype (Human Computer Interaction)</h2>
+                    <p>Created a High Fidelity Prototype of a shopping website with the use of HTML, CSS, JS for our HCI Final Project.</p>
+                    <div class="img_container">
+                        <img src="../img/calc.png" width="100%" id="proj_img">
+                    </div>
+                    <h2>Calculator (Object Oriented Programming)</h2>
+                    <p>Created a Basic Calculator with a Number System converter with Java and Apache Netbeans for the interface.</p>
+                    <div class="img_container">
+                        <img src="../img/chat.png" width="100%" id="proj_img">
+                    </div>
+                    <h2>Chat Application (Networking)</h2>
+                    <p>Created a Chat Application with the use of Node.js for our Final Project in Networking.</p>
                 </div>
             </div>
         </div>
